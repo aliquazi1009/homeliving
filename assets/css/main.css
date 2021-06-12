@@ -299,7 +299,7 @@ body {
 }
 
 .banner .container .carousel .carousel-item {
-   transition: 1s cubic-bezier(.67,.3,.41,.69);
+   transition: 0.8s;
 }
 
 
