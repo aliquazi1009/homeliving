@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | Shahid's website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+
+<body>
+    <!-- Tiny navbar including currency + language -->
+    <div class="jumbotron tiny-nav">
+        <div class="container">
+            <div class="dropdown mx-3">
+                <a href="javascript:void(0)" class="tiny-btn" data-toggle="dropdown">
+                    Currency: INR &nbsp;<i class="far fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">&#8377 INR</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">USA</a>
+                    <a class="dropdown-item" href="#">PAK</a>
+                    <a class="dropdown-item" href="#">SRL</a>
+                </div>
+            </div>
+            <div class="dropdown mx-3">
+                <a href="javascript:void(0)" class="tiny-btn" data-toggle="dropdown">
+                    Language: <span>EN</span> &nbsp;<i class="far fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Arabic</a>
+                    <a class="dropdown-item" href="#">Chines</a>
+                </div>
+            </div>
+            <a href="#" class="ml-auto tiny-btn cus_sup"> Customer Support: &nbsp; (+91) 909-024-5453</a>
+        </div>
+    </div>
+
+
+    <!-- Header Search -->
+    <section class="jumbotron header-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 imgBox">
+                    <a href="#" class="">
+                        <img src="./assets/images/logo1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-8 col-lg-6 searchBox">
+                    <div class="search-group d-none d-md-block d-lg-block">
+                        <form action="">
+                            <div class="inner-wrapper"> 
+                                <div class="search-catergory">
+                                    <select name="" id="">
+                                        <option value="0">All Category</option>
+                                        <option value="">Kitchen</option>
+                                        <option value="">&nbsp;&nbsp;Office</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Sofa Table</option>
+                                        <option value="">&nbsp;&nbsp;Chair</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coat Stand</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Foot Storage</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Stool</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="" id="" placeholder="Search..." class="input">
+                                <span class="search-btn">
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Hamburger Menu Button on Mobile -->
+                    <div class="hamburger-btn float-right d-block d-md-none d-lg-none">
+                        <!-- <img src="./assets/images/menu-btn.png" alt="" width="30px"> -->
+                        <div class="wrapper">
+                            <i class="far fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Header Navbar -->
+    <section class="header-navbar">
+        <div class="container">
+            <div class="navbar-wrapper d-none d-md-flex d-lg-flex">
+                <!-- Main Category Button-->
+                <div class="category-menu">
+                    <div class="dropdown">
+                        
+                        <a href="#" class="cat-btn" data-toggle="dropdown" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-stream" style="margin-right: 10px;"></i>
+                            Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fas fa-angle-down" style="margin-left: 20px;"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 100% !important;">
+                            <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                            <li><a class="dropdown-item" href="#">Bedroom</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" data-toggle="dropdown" href="#">Chairs <i class="far fa-angle-right float-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Office Chair</a>
+                                    <a class="dropdown-item" href="#">Chakki Chair Akbar Ail Quazi</a>
+                                </ul>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Tables</a></li>
+                            <li><a class="dropdown-item" href="#">Sofa Set</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" data-toggle="dropdown" href="#">Chairs <i class="far fa-angle-right float-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Kitchen</a>
+                                    <a class="dropdown-item" href="#">Chair</a>
+                                    <a class="dropdown-item" href="#">Bedroom</a>
+                                    <a class="dropdown-item" href="#">Sofa</a>
+                                    <a class="dropdown-item" href="#">Yes Boss</a>
+                                    <a class="dropdown-item" href="#">Ji Bhaiya Ji</a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Main Menu Items -->
+                <div class="main-menu">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile view search -->
+            <div class="search-group d-block d-md-none d-lg-none">
+                <form action="">
+                    <div class="inner-wrapper"> 
+                        <div class="search-catergory">
+                            <select name="" id="">
+                                <option value="0">All Category</option>
+                                <option value="">Kitchen</option>
+                                <option value="">&nbsp;&nbsp;Office</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Sofa Table</option>
+                                <option value="">&nbsp;&nbsp;Chair</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coat Stand</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Foot Storage</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Stool</option>
+                            </select>
+                        </div>
+                        <input type="text" name="" id="" placeholder="Search..." class="input">
+                        <span class="search-btn">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Banner Slider -->
+    <section class="banner">
+        <div class="container">
+            <div id="bannerSlider" class="carousel slide" data-ride="carousel" data-interval="3500">
+                <ol class="carousel-indicators">
+                  <li data-target="#bannerSlider" data-slide-to="0" class="active"></li>
+                  <li data-target="#bannerSlider" data-slide-to="1"></li>
+                  <li data-target="#bannerSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://opencart.mahardhi.com/MT03/flipmart/03/image/cache/catalog/banners/mainbanner1-1920x750.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://opencart.mahardhi.com/MT03/flipmart/03/image/cache/catalog/banners/mainbanner2-1920x750.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://opencart.mahardhi.com/MT03/flipmart/03/image/cache/catalog/banners/mainbanner1-1920x750.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#bannerSlider" role="button" data-slide="prev">
+                  <i class="far fa-angle-left"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#bannerSlider" role="button" data-slide="next">
+                  <i class="far fa-angle-right"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Scripts related to bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <!-- Script related to Font Awesome 5 -->
+    <script src="./assets/js/fontAwesomeIcons.js"></script>
+
+    <!-- To activate tooltip from popper js -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
