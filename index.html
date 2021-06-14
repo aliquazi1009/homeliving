@@ -7,8 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootsrap 4 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <!-- Main css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Slick slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" /> -->
 
 </head>
 
@@ -51,9 +56,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-6 imgBox">
-                    <a href="#" class="">
+                    <!-- <a href="#" class=""> -->
                         <img src="./assets/images/logo1.png" alt="">
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <div class="col-6 col-sm-6 col-md-8 col-lg-6 searchBox">
                     <div class="search-group d-none d-md-block d-lg-block">
@@ -143,9 +148,9 @@
                     <nav class="navbar">
                         <ul>
                             <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Special</a></li>
                             <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -184,9 +189,9 @@
 
     <!-- Banner Slider -->
     <section class="banner">
-        <div class="container">
+        <div class="container px-0">
             <div id="bannerSlider" class="carousel slide" data-ride="carousel" data-interval="3500">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators d-none d-md-flex">
                   <li data-target="#bannerSlider" data-slide-to="0" class="active"></li>
                   <li data-target="#bannerSlider" data-slide-to="1"></li>
                   <li data-target="#bannerSlider" data-slide-to="2"></li>
@@ -210,9 +215,167 @@
                   <i class="far fa-angle-right"></i>
                   <span class="sr-only">Next</span>
                 </a>
-              </div>
+            </div>
         </div>
     </section>
+
+    <!-- Quick About -->
+    <section class="jumbotron quick-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 cols">
+                    <div class="wrapper">
+                        <div class="icons">
+                            <i class="far fa-tag"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Free Delivery</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 cols">
+                    <div class="wrapper">
+                        <div class="icons">
+                            <i class="far fa-location-arrow"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Secure Payment</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 cols">
+                    <div class="wrapper">
+                        <div class="icons">
+                            <i class="far fa-tag"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Quality Products</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Top Slider -->
+    <section class="jumbotron top-slider">
+        <div class="container">
+            <div class="wrapper">
+                <h2>Top Products</h2>
+                <!-- <div class="indicators">
+                    <button type="button" aria-hidden="true" class="prev">
+                        <i class="far fa-angle-left"></i>
+                    </button>
+                    <button type="button" aria-hidden="true" class="next">
+                        <i class="far fa-angle-right"></i>
+                    </button>
+                </div> -->
+                <div class="t_slider row">
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <span style="background-color: #f68972;">New</span>
+                            <img src="./assets/images/slider/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="item cols">
+                        <div class="imgBox">
+                            <img src="./assets/images/slider/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Round Table</h5>
+                            <p class="price-tag">$12.5</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -226,12 +389,11 @@
     <!-- Script related to Font Awesome 5 -->
     <script src="./assets/js/fontAwesomeIcons.js"></script>
 
-    <!-- To activate tooltip from popper js -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <!-- Script related to slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Initialization of all required js in on place -->
+    <script src="./assets/js/init.js"></script>
 </body>
 
 </html>
