@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@400;700&family=Rubik:wght@300;400;500;600&display=swap");
 
 :root {
-  --theme-color: #667d8e; /*#667d8e or #e9b30e or #f68972*/
+  --theme-color: #0799d3; /*#667d8e or #e9b30e or #f68972*/
   --primary-dark-color: #252525;
   --secondary-dark-color: #757575;
   --primary-light-bg-color: #fff;
@@ -693,7 +693,7 @@ body {
   margin: 25px 0;
   border-radius: 0;
   /* background-color: #3a3a3a; */
-  background-color: #eaf0f7;
+  background-color: 0799d31a;
 }
 /* 
 .exp .container {
