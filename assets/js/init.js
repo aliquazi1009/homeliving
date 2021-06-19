@@ -7,7 +7,7 @@ $(function () {
 // Slick slider initialization from slick.min js
 $(document).ready(function(){
     $('.t_slider').slick({
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 2,
         swipeToSlide: true,
         autoplay: true,
@@ -50,6 +50,23 @@ $(document).ready(function(){
                 slidesToScroll: 1
             }
         }, ]
+    });
+});
+
+
+// Testimonial Slider Initialization
+$(document).ready(function(){
+    $('.feedback_slider').slick({
+        // slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 2670,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        speed: 500
     });
 });
 
