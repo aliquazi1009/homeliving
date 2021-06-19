@@ -193,7 +193,7 @@ body {
 }
 
 .header-search .container .row .searchBox .hamburger-btn .wrapper .fa-bars{
-   color: var(--primary-dark-color);
+   color: var(--theme-color);
    font-size: 29px;
 }
 
@@ -693,7 +693,7 @@ body {
   margin: 25px 0;
   border-radius: 0;
   /* background-color: #3a3a3a; */
-  background-color: #e2ebf5;
+  background-color: #eaf0f7;
 }
 /* 
 .exp .container {
@@ -730,46 +730,48 @@ body {
 
 .exp .container .row .cols:nth-child(1) .content p:nth-child(1) {
   /* color: #acacac; */
-  color: #252525;
+  font-weight: var(--medium);
+  color: #464646;
 }
 .exp .container .row .cols:nth-child(1) .content p:nth-last-child(1) {
   font-family: var(--paragraph-font);
   /* color: #d6d6d6; */
   color: #474747;
   line-height: 27px;
-  font-size: 17px;
+  font-size: 16px;
   max-width: 500px;
   margin-top: 20px;
 }
 
 .exp .container .row .cols:nth-child(2) img{
   width: 100%;
+  object-fit: cover;
   /* height: 100%; */
 }
 
 
-.exp .container .row.stats {
-  /* background-color: pink; */
+/* .exp .container .row.stats {
+  background-color: pink;
   margin-top: 50px;
 }
 
 .exp .container .row.stats .box {
-  /* background-color: goldenrod; */
+  background-color: goldenrod;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   padding: 35px 20px;
 }
 
 .exp .container .row.stats .box .icons {
-  /* background-color: skyblue; */
+  background-color: skyblue;
   font-size: 38px;
 }
 
 .exp .container .row.stats .box .wrapper {
-  /* background-color: tomato; */
+  background-color: tomato;
   margin-left: 20px;
-  /* color: #d6d6d6; */
+  color: #d6d6d6;
   color: #252525;
 }
 
@@ -784,7 +786,110 @@ body {
   margin: 0;
   font-size: 17px;
   font-weight: var(--medium);
+} */
+
+
+/* -------------------------------------------- Testimonial ------------------------------------------ */
+.testi {
+  margin: 0;
+  border-radius: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--secondary-light-bg-color);
 }
+
+.testi .container {
+  background-color: #fff;
+}
+
+.testi .container h2 {
+  font-size: 24px;
+  font-family: var(--heading-font);
+  color: #3a3a3a;
+  padding: 15px 10px 0 10px;
+  /* margin-bottom: 10px; */
+  position: relative;
+}
+.testi .container h2::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  top: calc(100% + 3px);
+  /* border-radius: 15px; */
+  background-color: var(--theme-color);
+}
+
+.testi .row {
+  /* background-color: burlywood; */
+  /* padding: 0; */
+  margin: 0;
+
+}
+
+.testi .row2 {
+  /* background-color: brown; */
+  margin-bottom: 20px;
+  /* padding: 25px; */
+}
+
+.testi .row2 .cols2 {
+  /* background-color: skyblue; */
+  padding: 15px;
+}
+
+.testi .row2 .cols2 .wrapper{
+  /* background-color: orangered; */
+  padding: 15px;
+  box-shadow: 0 0.6375rem 0.975rem 0 #f4f8fe, 0 3px 6px 0 #f4f8fe !important;
+}
+
+.testi .row2 .cols2 .wrapper .flexbox {
+  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+}
+
+.testi .row2 .cols2 .wrapper .flexbox img { 
+  width: 50px;
+  height: 50px;
+}
+.testi .row2 .cols2 .wrapper .flexbox h3 {
+  font-family: var(--paragraph-font);
+  font-size: 19px;
+  color: #091e40;
+  font-weight: var(--medium);
+  margin-left: 15px;
+}
+
+.testi .row2 .cols2 .wrapper p {
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  line-height: 28px;
+  color: #757575;
+  margin-top: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1021,11 +1126,16 @@ body {
   .exp .container .row .cols:nth-child(1) .content p:nth-last-child(1) {
     font-size: 16px;
   }
+
+  .header-search .container .row .searchBox .hamburger-btn .wrapper .fa-bars {
+    font-size: 25px !important;
+  }
 }
 @media (max-width: 380px) {
-  /* .header-search .container .row .searchBox .hamburger-btn .wrapper .fa-bars {
-    
-  } */
+  .header-search .container .row .searchBox .hamburger-btn .wrapper .fa-bars {
+    color: var(--theme-color);
+    font-size: 22px !important;
+  }
 
   .offers .container .row .cols .content h5 {
     font-size: 16px;
