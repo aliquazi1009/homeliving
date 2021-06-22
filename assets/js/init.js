@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 
 
-// --------------On event manupilation js ------------------
+// -------------- On event manupilation js ------------------
 
 
 // To show/hide the search result in header.
@@ -82,8 +82,33 @@ $(document).mouseup(function(e){
     });
 
     var x = $(".search-result");
+    var y = $("#mobileNav");
     
     if(!x.is(e.target) && x.has(e.target).length === 0){
         x.hide();
     }
+    if(!y.is(e.target) && y.has(e.target).length === 0){
+        $('#mobileNav').css("left", "-85%"),
+        $('#mobileNavOpen').css("opacity", "1")
+    }
 });
+
+// To open and close the mobile navbar
+$(document).ready(function(){
+    $('#mobileNavOpen').click(function(){
+        $('#mobileNav').css("left", "0"),
+        $(this).css("opacity", "0")
+        // $('body, .carousel-control-prev, .carousel-control-next').css({
+        //     "overflow-y" : "hidden",
+        //     "pointer-evetns" : "none !important"
+        // })
+    }),
+    $('#mobileNavClose').click(function(){
+        $('#mobileNav').css("left", "-85%"),
+        $('#mobileNavOpen').css("opacity", "1")
+        // $('body, .carousel-control-prev, .carousel-control-next').css({
+        //     "overflow-y" : "scroll",
+        //     "pointer-evetns" : "default"
+        // })
+    })
+})
