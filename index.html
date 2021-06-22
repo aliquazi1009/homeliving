@@ -13,11 +13,27 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <!-- Slick slider css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" /> -->
 
 </head>
 
 <body>
+    <!-- Side Navbar -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="container">
+            <div class="close-btn">
+                <div id="mobileNavClose">&#x2715;</div>
+            </div>
+            <div class="innder-container">
+                <a href="#" class="menu-links">Home</a>
+                <a href="#" class="menu-links">Categories <span>⟶</span></a>
+                <a href="#" class="menu-links">About ⟵</a>
+                <a href="#" class="menu-links">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+
     <!-- Tiny navbar including currency + language -->
     <div class="jumbotron tiny-nav">
         <div class="container">
@@ -110,7 +126,7 @@
                     <!-- Hamburger Menu Button on Mobile -->
                     <div class="hamburger-btn float-right d-block d-md-none d-lg-none">
                         <!-- <img src="./assets/images/menu-btn.png" alt="" width="30px"> -->
-                        <div class="wrapper">
+                        <div class="wrapper" id="mobileNavOpen">
                             <i class="fas fa-bars"></i>
                         </div>
                     </div>
@@ -750,7 +766,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div> -->
                                 <div class="icon-text">
-                                    <p><bold></bold>Mobile:</bold> (+91) 909-024-5453</p>
+                                    <p><bold style="font-weight: 500;">Mobile:</bold> (+91) 909-024-5453</p>
                                 </div>
                             </a>
                         </li>
@@ -760,7 +776,7 @@
                                     <i class="fas fa-envelope"></i>
                                 </div> -->
                                 <div class="icon-text">
-                                    <p><bold></bold>Mail:</bold> shahid@xyz.com</p>
+                                    <p><bold style="font-weight: 500;">Mail:</bold> shahid@xyz.com</p>
                                 </div>
                             </a>
                         </li>
@@ -770,7 +786,7 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div> -->
                                 <div class="icon-text">
-                                    <p><bold></bold>Address:</bold> Phase 3, Kudi Basni, Jodhpur 342001. </p>
+                                    <p><bold style="font-weight: 500;">Address:</bold> Phase 3, Kudi Basni, Jodhpur 342001. </p>
                                 </div>
                             </a>
                         </li>
@@ -804,7 +820,7 @@
                     <p>Lorem ipsum dolor sit amet.</p>
                     <div class="input-box">
                         <form action="">
-                            <input type="email" placeholder="Enter Your Mail" class="input">
+                            <input type="email" placeholder="Your Mail" class="input">
                             <input type="submit" class="input-btn" value="Subscribe">
                         </form>
                     </div>
