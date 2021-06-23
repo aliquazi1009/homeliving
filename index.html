@@ -24,10 +24,37 @@
                 <div id="mobileNavClose">&#x2715;</div>
             </div>
             <div class="innder-container">
-                <a href="#" class="menu-links">Home</a>
-                <a href="#" class="menu-links">Categories <span>⟶</span></a>
-                <a href="#" class="menu-links">About ⟵</a>
-                <a href="#" class="menu-links">Contact</a>
+                <ul>
+                    <li>
+                        <a href="#" class="menu-links" id="catOpen">Home </a>
+                    </li>
+                    <li>
+                        <a href="#categorySubmenu" class="menu-links" data-toggle="collapse" aria-expanded="false">Categories ↓</a>
+                        <ul class="collapse inner-submenu" id="categorySubmenu">
+                            <li>
+                                <a href="#" class="menu-links">Dining</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-links">Living</a>
+                            </li>
+                            <li>
+                                <a href="#diningSubmenu" class="menu-links" data-toggle="collapse" aria-expanded="false">Office ↓</a>
+                                <ul class="collapse inner-submenu" id="diningSubmenu">
+                                    <li><a href="#" class="menu-links">Dining Set</a></li>
+                                    <li><a href="#" class="menu-links">Dining Table</a></li>
+                                    <li><a href="#" class="menu-links">Dining Seat</a></li>
+                                    <li><a href="#" class="menu-links">Dining Sofa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#" class="menu-links">About </a> <!-- ⟵ ⟶ -->
+                    </li>
+                    <li>
+                        <a href="#" class="menu-links">Contact </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
