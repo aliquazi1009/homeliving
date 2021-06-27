@@ -3,6 +3,15 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
+// Product Zoom js Initialization
+$(document).ready(function() {
+    $('#zoom').zoom();
+});
+$('.smallImg img').on('click',function(){
+    var img = $(this).attr('src');
+    $("#bigImg, .zoomImg").attr("src",img)
+});
+
 
 // Slick slider initialization from slick.min js
 $(document).ready(function(){
