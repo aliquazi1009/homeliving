@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product Details | Shahid's website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootsrap 4 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- Slick slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!-- FontAwesome css for pesudo icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
+    <!-- Cloud Zoom css  -->
+    <link rel="stylesheet" href="../assets/css/cloud-zoom.css">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Side Navbar -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="container">
+            <div class="close-btn">
+                <div id="mobileNavClose">&#x2715;</div>
+            </div>
+            <div class="innder-container">
+                <ul>
+                    <li>
+                        <a href="#" class="menu-links" id="catOpen">Home </a>
+                    </li>
+                    <li>
+                        <a href="#categorySubmenu" class="menu-links" data-toggle="collapse" aria-expanded="false">Categories ↓</a>
+                        <ul class="collapse inner-submenu" id="categorySubmenu">
+                            <li>
+                                <a href="#" class="menu-links">Dining</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-links">Living</a>
+                            </li>
+                            <li>
+                                <a href="#diningSubmenu" class="menu-links" data-toggle="collapse" aria-expanded="false">Office ↓</a>
+                                <ul class="collapse inner-submenu" id="diningSubmenu">
+                                    <li><a href="#" class="menu-links">Dining Set</a></li>
+                                    <li><a href="#" class="menu-links">Dining Table</a></li>
+                                    <li><a href="#" class="menu-links">Dining Seat</a></li>
+                                    <li><a href="#" class="menu-links">Dining Sofa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#" class="menu-links">About </a> <!-- ⟵ ⟶ -->
+                    </li>
+                    <li>
+                        <a href="#" class="menu-links">Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Tiny navbar including currency + language -->
+    <div class="jumbotron tiny-nav">
+        <div class="container">
+            <div class="dropdown mx-3">
+                <a href="javascript:void(0)" class="tiny-btn" data-toggle="dropdown">
+                    Currency: INR &nbsp;<i class="far fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">&#8377 INR</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">USA</a>
+                    <a class="dropdown-item" href="#">PAK</a>
+                    <a class="dropdown-item" href="#">SRL</a>
+                </div>
+            </div>
+            <div class="dropdown mx-3">
+                <a href="javascript:void(0)" class="tiny-btn" data-toggle="dropdown">
+                    Language: <span>EN</span> &nbsp;<i class="far fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Arabic</a>
+                    <a class="dropdown-item" href="#">Chines</a>
+                </div>
+            </div>
+            <a href="#" class="ml-auto tiny-btn cus_sup"> Customer Support: &nbsp; (+91) 909-024-5453</a>
+        </div>
+    </div>
+
+
+    <!-- Header Search -->
+    <section class="jumbotron header-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 imgBox">
+                    <!-- <a href="#" class=""> -->
+                        <img src="../assets/images/logo1.png" alt="">
+                    <!-- </a> -->
+                </div>
+                <div class="col-6 col-sm-6 col-md-8 col-lg-6 searchBox">
+                    <div class="search-group d-none d-md-block d-lg-block">
+                        <form action="">
+                            <div class="inner-wrapper"> 
+                                <div class="search-catergory">
+                                    <select name="" id="">
+                                        <option value="0">All Category</option>
+                                        <option value="">Kitchen</option>
+                                        <option value="">&nbsp;&nbsp;Office</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Sofa Table</option>
+                                        <option value="">&nbsp;&nbsp;Chair</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coat Stand</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Foot Storage</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Stool</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-grp" style="width: 100%;">
+                                    <input type="text" name="" placeholder="Search..." class="input search-input">
+                                    <div class="search-result">
+                                        <a href="#" class="wrapper">
+                                            <img src="../assets/images/slider/2.jpg" alt="">
+                                            <div class="content">
+                                                <h5>Round Table</h5>
+                                                <p>$25.45</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="wrapper">
+                                            <img src="../assets/images/slider/6.jpg" alt="">
+                                            <div class="content">
+                                                <h5>Coffee Table</h5>
+                                                <p>$25.45</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="see-all"> See All </a>
+                                    </div>
+                                </div>
+                                
+                                <span class="search-btn">
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Hamburger Menu Button on Mobile -->
+                    <div class="hamburger-btn float-right d-block d-md-none d-lg-none">
+                        <!-- <img src="../assets/images/menu-btn.png" alt="" width="30px"> -->
+                        <div class="wrapper" id="mobileNavOpen">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Header Navbar -->
+    <section class="header-navbar">
+        <div class="container">
+            <div class="navbar-wrapper d-none d-md-flex d-lg-flex">
+                <!-- Main Category Button-->
+                <div class="category-menu">
+                    <div class="dropdown">
+                        
+                        <a href="#" class="cat-btn" data-toggle="dropdown" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-stream" style="margin-right: 10px;"></i>
+                            Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fas fa-angle-down" style="margin-left: 20px;"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 100% !important;">
+                            <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                            <li><a class="dropdown-item" href="#">Bedroom</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" data-toggle="dropdown" href="#">Chairs <i class="far fa-angle-right float-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Office Chair</a>
+                                    <a class="dropdown-item" href="#">Chakki Chair Akbar Ail Quazi</a>
+                                </ul>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Tables</a></li>
+                            <li><a class="dropdown-item" href="#">Sofa Set</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" data-toggle="dropdown" href="#">Chairs <i class="far fa-angle-right float-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Kitchen</a>
+                                    <a class="dropdown-item" href="#">Chair</a>
+                                    <a class="dropdown-item" href="#">Bedroom</a>
+                                    <a class="dropdown-item" href="#">Sofa</a>
+                                    <a class="dropdown-item" href="#">Yes Boss</a>
+                                    <a class="dropdown-item" href="#">Ji Bhaiya Ji</a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Main Menu Items -->
+                <div class="main-menu">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">Special</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile view search -->
+            <div class="search-group d-block d-md-none d-lg-none">
+                <form action="">
+                    <div class="inner-wrapper"> 
+                        <div class="search-catergory">
+                            <select name="" id="">
+                                <option value="0">All Category</option>
+                                <option value="">Kitchen</option>
+                                <option value="">&nbsp;&nbsp;Office</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Sofa Table</option>
+                                <option value="">&nbsp;&nbsp;Chair</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Coat Stand</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Foot Storage</option>
+                                <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Stool</option>
+                            </select>
+                        </div>
+
+                        <div class="input-grp" style="width: 100%;">
+                            <input type="text" name="" placeholder="Search..." class="input search-input">
+                            <div class="search-result">
+                                <a href="#" class="wrapper">
+                                    <img src="../assets/images/slider/2.jpg" alt="">
+                                    <div class="content">
+                                        <h5>Round Table</h5>
+                                        <p>$25.45</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="wrapper">
+                                    <img src="../assets/images/slider/6.jpg" alt="">
+                                    <div class="content">
+                                        <h5>Coffee Table</h5>
+                                        <p>$25.45</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="see-all"> See All </a>
+                            </div>
+                        </div>
+
+
+
+                        <span class="search-btn">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Path link -->
+    <section class="container path-link">
+        <div class="content">
+            <h2>Chrome Table Lampd</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Chrome Table Lampd</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main detail section -->
+    <section class="jumbotron main-detail">
+        <div class="container" style="padding-bottom: 10px;">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 cols">
+                   <div class="wrapper">
+                      <div class="bigImg" id="zoom">
+                          <img src="../assets/images/product/1.jpg" alt="" id="bigImg">
+                      </div>
+                      <div class="smallImg">
+                          <div class="imgBox"><img src="../assets/images/product/1.jpg" alt=""></div>
+                          <div class="imgBox"><img src="../assets/images/product/2.jpg" alt=""></div>
+                          <div class="imgBox"><img src="../assets/images/product/3.jpg" alt=""></div>
+                          <div class="imgBox"><img src="../assets/images/product/4.jpg" alt=""></div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8 cols">
+                    <div class="wrapper">
+                        <div class="title-box">
+                            <h2>Chrome Table Lampd</h2>
+                            <h4>subheading</h4>
+                        </div>
+                        <hr>
+                        <div class="p-code">
+                            <p><span> Product Code: </span> &nbsp;&nbsp;101</p>
+                            <p><span> Availability: </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Stock</p>
+                        </div>
+                        <hr>
+                        <div class="price-tags">
+                            <h2>$534.00</h2>
+                            <p class="tax">Extra Tax: &nbsp;$100.00</p> <!-- ₹ -->
+
+                            <p class="pt-4"><span> Minimum Order: </span> &nbsp;10 piece</p>
+                            <p><span> Sample Policy: </span> &nbsp;Contact us for information regarding our sample policy</p>
+                        </div>
+                        <hr>
+                        <div class="custom">
+                            <h2>Want to customize this item?</h2>
+                            <p>Get the shape, size, colour or options you want! <br> 
+                                Click below to request alterations and we will get back to you.</p>
+                            <a href="#" class="req-btn">Request</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container desc">
+                <h4>Description</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat autem, numquam excepturi beatae accusamus hic tempora assumenda ut fugiat eveniet quae quo quos magni consequatur sint suscipit reiciendis. Cupiditate quam accusamus sint ipsam eaque aperiam corporis ex assumenda unde deserunt eos blanditiis veritatis asperiores a, perferendis beatae id nesciunt aspernatur.</p>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat autem, numquam excepturi beatae accusamus hic tempora assumenda ut fugiat eveniet quae quo quos magni consequatur sint suscipit reiciendis. Cupiditate quam accusamus sint ipsam eaque aperiam corporis ex assumenda unde deserunt eos blanditiis veritatis asperiores a, perferendis beatae id nesciunt aspernatur.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Footer -->
+    <footer class="jumbotron footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 cols">
+                    <img src="../assets/images/logo1.png" alt="" width="120">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <!-- <div class="icons">
+                                    <i class="fas fa-phone"></i>
+                                </div> -->
+                                <div class="icon-text">
+                                    <p><bold style="font-weight: 500;">Mobile:</bold> (+91) 909-024-5453</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- <div class="icons">
+                                    <i class="fas fa-envelope"></i>
+                                </div> -->
+                                <div class="icon-text">
+                                    <p><bold style="font-weight: 500;">Mail:</bold> shahid@xyz.com</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- <div class="icons">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div> -->
+                                <div class="icon-text">
+                                    <p><bold style="font-weight: 500;">Address:</bold> Phase 3, Kudi Basni, Jodhpur 342001. </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 cols">
+                    <div class="content">
+                        <h3>Quicks</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Special</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 cols">
+                    <div class="content">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 cols">
+                    <h3>Join us</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="input-box">
+                        <form action="">
+                            <input type="email" placeholder="Your Mail" class="input">
+                            <input type="submit" class="input-btn" value="Join us">
+                        </form>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts related to bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <!-- Script related to Font Awesome 5 -->
+    <script src="../assets/js/fontAwesomeIcons.js"></script>
+
+    <!-- Script related to slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Others -->
+    <script src="../assets/js/init.js"></script>
+    <script src="../assets/js/jquery.zoom.js"></script>
+</body>
+
+</html>
