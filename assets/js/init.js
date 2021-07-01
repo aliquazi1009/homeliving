@@ -3,14 +3,20 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
+
+
 // Product Zoom js Initialization
 $(document).ready(function() {
     $('#zoom').zoom();
 });
+
+// On thumbnail click main image change
 $('.smallImg img').on('click',function(){
     var img = $(this).attr('src');
     $("#bigImg, .zoomImg").attr("src",img)
 });
+
+
 
 
 // Slick slider initialization from slick.min js
@@ -91,11 +97,14 @@ $(document).mouseup(function(e){
     });
 
     var x = $(".search-result");
-    var y = $(".mobile-nav .container");
     
     if(!x.is(e.target) && x.has(e.target).length === 0){
         x.hide();
     }
+
+    //side navbar hide when click outside
+    var y = $(".mobile-nav .container");    
+
     if(!y.is(e.target) && y.has(e.target).length === 0){
         $('.mobile-nav').css("opacity", "0"),
         $('.mobile-nav').css("visibility", "hidden"),
@@ -126,22 +135,4 @@ $(document).ready(function(){
             'overflow-y' : 'scroll'
         })
     })
-
-
-
-
 })
-
-// Close opened collapse in sidebar
-
-// $(window).click(function(e) {
-//     var sidenav = $('#xyz');
-//     if (!e.target != sidenav) {
-//         $('.mobile-nav').css("opacity", "0"),
-//         $('.mobile-nav').css("visibility", "hidden"),
-//         $('.mobile-nav .container').css("margin-left", "-100%"),
-//         $('body').css({
-//             'overflow-y' : 'scroll'
-//         })
-//     }
-// });
